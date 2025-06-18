@@ -14,9 +14,22 @@ public class SUV : IVehicle, ICompany
 
     public void Drive()
     {
-        Console.WriteLine("Car is Driving");
+        Console.WriteLine("SUV is Driving");
     }
     
     public string Logo { get; set; }
     public string Name { get; set; }
+    
+    public void DisplayDetails()
+    {
+        Console.WriteLine($"--- {Name} SUV Details ---");
+        Console.WriteLine($"Logo: {Logo}");
+        Console.WriteLine($"Number of Wheels: {NumberOfWheels}");
+        Console.WriteLine($"Has Seat Belts: {HasSeatBelts}");
+        Console.WriteLine($"Horn Works: {HornWorks}");
+        Console.WriteLine($"Has License Plate: {HasLicensePlate}");
+        Console.WriteLine($"Number of Seats: {NumberOfSeats}");
+        Console.WriteLine($"Has Third Row: {HasThirdRow}");
+        Console.WriteLine();
+    }
 }

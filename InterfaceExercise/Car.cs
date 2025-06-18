@@ -19,4 +19,17 @@ public class Car : IVehicle, ICompany
     
     public string Logo { get; set; }
     public string Name { get; set; }
+
+    public void DisplayDetails()
+    {
+        Console.WriteLine($"--- {Name} Car Details ---");
+        Console.WriteLine($"Logo: {Logo}");
+        Console.WriteLine($"Number of Wheels: {NumberOfWheels}");
+        Console.WriteLine($"Has Seat Belts: {HasSeatBelts}");
+        Console.WriteLine($"Horn Works: {HornWorks}");
+        Console.WriteLine($"Has License Plate: {HasLicensePlate}");
+        Console.WriteLine($"Has Trunk: {HasTrunk}");
+        Console.WriteLine($"Is Sedan: {IsSedan}");
+        Console.WriteLine();
+    }
 }

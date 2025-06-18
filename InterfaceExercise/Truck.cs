@@ -14,9 +14,22 @@ public class Truck : IVehicle, ICompany
 
     public void Drive()
     {
-        Console.WriteLine("Car is Driving");
+        Console.WriteLine("Truck is Driving");
     }
 
     public string Logo { get; set; }
     public string Name { get; set; }
+    
+    public void DisplayDetails()
+    {
+        Console.WriteLine($"--- {Name} Truck Details ---");
+        Console.WriteLine($"Logo: {Logo}");
+        Console.WriteLine($"Number of Wheels: {NumberOfWheels}");
+        Console.WriteLine($"Has Seat Belts: {HasSeatBelts}");
+        Console.WriteLine($"Horn Works: {HornWorks}");
+        Console.WriteLine($"Has License Plate: {HasLicensePlate}");
+        Console.WriteLine($"HasTailgate: {HasTailgate}");
+        Console.WriteLine($"Can Tow: {CanTow}");
+        Console.WriteLine();
+    }
 }
